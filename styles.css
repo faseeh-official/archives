@@ -66,17 +66,21 @@ html, body {
 }
 
 .back-btn {
-    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(58, 118, 32);
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 1024px;
     padding: 12px;
     margin: 16px;
     cursor: pointer;
     transition: background-color 0.1s;
+    z-index: 999;
 }
 
 .back-btn:hover {
-    background-color: rgb(157, 37, 22);
+    background-color: rgb(22, 157, 83);
 }
