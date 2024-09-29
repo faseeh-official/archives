@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--body);
+    color: var(--primary-text);
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    column-gap: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--div-bg);
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.home-btn {
+    font-size: 24px;
+    padding: 16px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    border-radius: 999px;
+    transition: background-color 0.1s;
+    transition: color 0.1s;
+}
+.home-btn:hover {
+    background: var(--primary-on-hover);
+}
+
+.license-text {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--secondary-text);
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.download-items {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.download-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--div-bg);
+    transition: border 0.2s;
+}
+
+.download-item:hover {
+    border: 1px solid var(--secondary-text);
+}
+
+.item-a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+.item-a:hover {
+    text-decoration: underline;
+}
+
+.item-img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    border-radius: 6px;
+}

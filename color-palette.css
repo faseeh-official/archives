@@ -1,0 +1,26 @@
+:root {
+    /* Main Color Palette from https://coolors.co/palette/386641-6a994e-a7c957-f2e8cf-bc4749 */
+    --body: white;
+    --primary-text: black;
+    --secondary-text: rgb(82, 82, 82);
+    --primary: #0c5586;
+    --on-primary: white;
+    --primary-on-hover: #0b314b;
+    --error: #ff0000;
+    
+    --div-bg: #0000001e;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body: rgb(26, 26, 26);
+        --primary-text: rgb(220, 220, 220);
+        --secondary-text: rgb(173, 173, 173);
+        --primary: #5b8641;
+        --on-primary: white;
+        --primary-on-hover: #76a75a;
+        --error: #ff2a2a;
+
+        --div-bg: #ffffff27;
+    } 
+}
