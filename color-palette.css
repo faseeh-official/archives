@@ -6,7 +6,11 @@
     --primary: #0c5586;
     --on-primary: white;
     --primary-on-hover: #0b314b;
+    --secondary: #548622;
+    --on-secondary: white;
+    --secondary-on-hover: #537335;
     --error: #ff0000;
     
-    --div-bg: #0000001e;
+    --div-bg: #0000000e;
+    --div-bg-on-hover: #0000001e;
 }

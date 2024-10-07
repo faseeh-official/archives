@@ -54,10 +54,9 @@ body {
 }
 
 .download-items {
-    display: grid;
-    width: 100%;
-    max-width: 800px;
-    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
     gap: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -65,36 +64,43 @@ body {
 
 .download-item {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
     gap: 6px;
     border: none;
     border-radius: 6px;
     background-color: var(--div-bg);
-    transition: border 0.2s;
+    transition: background-color 0.2s;
 }
 
 .download-item:hover {
-    border: 1px solid var(--secondary-text);
+    background-color: var(--div-bg-on-hover);
 }
 
-.item-a {
+.item-name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-weight: bold;
     text-align: center;
+    margin: 0px;
     color: var(--primary-text);
-    text-decoration: none;
-}
-.item-a:hover {
-    text-decoration: underline;
 }
 
-.item-img {
-    width: 100%;
-    height: auto;
-    image-rendering: pixelated;
-    border-radius: 6px;
+.download-button {
+    font-size: 16px;
+    padding: 8px;
+    margin: 0px;
+    width: 120px;
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    border: none;
+    border-radius: 999px;
+    transition: background-color 0.1s;
+    transition: color 0.1s;
+}
+.download-button:hover {
+    background: var(--secondary-on-hover);
 }

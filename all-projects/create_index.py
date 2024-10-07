@@ -49,22 +49,6 @@ with open("index.html", 'w') as html_file:
 
         <div class='download-item'>
 ''')
-        path_to_svg_file = os.path.join(subfolders_paths[i], "img.svg")
-        if os.path.isfile(path_to_svg_file):
-            html_file.write(f'''
-            <img data-src="{path_to_svg_file}" alt="Icon." class="item-img">
-''')
-            print(f"Added the icon element for '{subfolders_names[i]}'.")
-        else:
-            print(f"Unable to find img.svg for '{subfolders_names[i]}'. Searching for img.png instead...")
-            path_to_png_file = os.path.join(subfolders_paths[i], "img.png")
-            if os.path.isfile(path_to_png_file):
-                html_file.write(f'            <img data-src="{path_to_png_file}" alt="Thumbnail." class="item-img">\n')
-                print("img.png file have been added.")
-            else:
-                print("img.svg and img.png not found.")
-                html_file.write(f'            <img data-src="assets/no_image.png" alt="No image available." class="item-img">\n')
-        project_name = "Name Unavailable"
         try:
             with open(os.path.join(subfolders_paths[i], "name.txt"), 'r') as name_file:
                 project_name = name_file.read()
@@ -73,7 +57,10 @@ with open("index.html", 'w') as html_file:
             project_name = "Name Unavailable"
             print(f"Unable to find name.txt for '{subfolders_paths[i]}'.")
         html_file.write(f'''
-            <a href="{os.path.join(path, "file.zip")}" class="item-a" download>{project_name}</a>
+            <p class="item-name">{project_name}<p>
+            <a href="{os.path.join(path, "file.zip")}" download>
+                <button class="download-button">Download</button>
+            </a>
         </div>
 ''')
         i += 1
