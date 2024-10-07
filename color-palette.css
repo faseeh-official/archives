@@ -3,13 +3,13 @@
     --body: white;
     --primary-text: black;
     --secondary-text: rgb(82, 82, 82);
-    --primary: #0c5586;
+    --primary: #457b9d;
     --on-primary: white;
-    --primary-on-hover: #0b314b;
-    --secondary: #548622;
+    --primary-on-hover: #1d3557;
+    --secondary: #6A994E;
     --on-secondary: white;
-    --secondary-on-hover: #537335;
-    --error: #ff0000;
+    --secondary-on-hover: #386641;
+    --error: #BC4749;
     
     --div-bg: #0000000e;
     --div-bg-on-hover: #0000001e;
