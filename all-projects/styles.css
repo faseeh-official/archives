@@ -76,6 +76,7 @@ body {
     border-radius: 6px;
     background-color: var(--div-bg);
     transition: background-color 0.2s;
+    box-sizing: border-box;
 }
 
 .download-item:hover {
