@@ -37,6 +37,7 @@ body {
     color: var(--on-primary);
     border: none;
     border-radius: 999px;
+    cursor: pointer;
     transition: background-color 0.1s;
     transition: color 0.1s;
 }
@@ -100,6 +101,7 @@ body {
     color: var(--on-secondary);
     border: none;
     border-radius: 999px;
+    cursor: pointer;
     transition: background-color 0.1s;
     transition: color 0.1s;
 }

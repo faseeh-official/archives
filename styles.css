@@ -37,15 +37,11 @@ html, body {
     text-align: center;
     padding-left: 16px;
     padding-right: 16px;
-    border-bottom: none;
 }
 
 @media (max-width: 800px) {
     .container2 {
         flex-direction: column;
-    }
-    .welcome {
-        border-bottom: 1px solid var(--primary-text);
     }
 }
 
@@ -69,7 +65,7 @@ html, body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: rgb(58, 118, 32);
+    background-color: var(--secondary);
     color: white;
     font-size: 18px;
     border: none;
@@ -82,5 +78,5 @@ html, body {
 }
 
 .back-btn:hover {
-    background-color: rgb(22, 157, 83);
+    background-color: var(--secondary-on-hover);
 }
