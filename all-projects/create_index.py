@@ -32,6 +32,9 @@ with open("index.html", 'w') as html_file:
     <link rel="stylesheet" href="../color-palette.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/main_icon.png" type="image/x-icon">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2741277026989187"
+         crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
